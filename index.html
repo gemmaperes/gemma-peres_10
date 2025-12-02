@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gemma Peres — Art i Poesia</title>
+  <meta name="description" content="Web d’artista amb obra pictòrica per tècniques i sèries; llibres de poesia i aparador d’enllaços a col·leccions NFT d’art digital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme:dark light}
+    html{scroll-behavior:smooth}
+    .font-ui{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    .font-display{font-family: "Cormorant Garamond", Georgia, serif}
+    :focus-visible{outline: 2px solid white; outline-offset: 4px}
+  </style>
+</head>
+<body class="font-ui bg-neutral-900 text-neutral-100">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-neutral-800 focus:px-3 focus:py-2 focus:rounded-xl">Saltar al contingut</a>
+
+  <!-- [HEADER / NAV] -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/70 bg-neutral-900/90 border-b border-neutral-800">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#inici" class="font-display text-2xl tracking-wide">Gemma Peres · Art i Poesia</a>
+      <nav aria-label="Navegació principal">
+        <ul class="hidden md:flex gap-6 text-sm">
+          <li><a class="hover:underline underline-offset-4" href="#galeria">Galeria</a></li>
+          <li><a class="hover:underline underline-offset-4" href="#poesia">Llibres de poesia</a></li>
+          <li><a class="hover:underline underline-offset-4" href="#biografia">Sobre mi</a></li>
+          <li><a class="hover:underline underline-offset-4" href="#contacte">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- [HERO / INICI] -->
+    <section id="inici" class="bg-gradient-to-b from-neutral-900 to-neutral-950">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="font-display text-4xl md:text-5xl leading-tight">Gemma Peres · Art i Poesia</h1>
+          <p class="mt-5 text-neutral-300 max-w-prose">Web d’artista amb obra pictòrica i treball per tècniques pictòriques i sèries. Aquí també hi trobaràs els meus llibres de poesia i, a banda, un aparador amb enllaços a les meves col·leccions NFT d'art digital.</p>
+          <div class="mt-8 flex gap-3">
+            <a href="#galeria" class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">Entrar a la galeria</a>
+            <a href="#poesia" class="inline-flex items-center rounded-2xl px-5 py-3 border border-neutral-700 hover:border-neutral-500">Llibres de poesia</a>
+          </div>
+        </div>
+        <figure class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl ring-1 ring-neutral-800">
+          <img src="assets/img/premi art emergent.jpg" alt="Taller de Gemma Peres — obra en procés" class="w-full h-full object-cover" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- [GALERIA] Portada amb dues opcions -->
+<section id="galeria" class="py-16 md:py-24 border-t border-neutral-800">
+  <div class="mx-auto max-w-6xl px-4">
+    <header class="flex items-end justify-between gap-6">
+      <h2 class="font-display text-3xl md:text-4xl">Galeria</h2>
+      <p class="text-neutral-400 max-w-xl">Consulta l’obra per tècniques pictòriques i sèries. La galeria d’NFT és un recull d’enllaços a plataformes de NFt Art digital.</p>
+    </header>
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <!-- Targeta Galeria d’obra -->
+      <a href="#galeria-obra" class="group relative rounded-3xl overflow-hidden ring-1 ring-neutral-800 hover:ring-neutral-600 transition block">
+        <img src="assets/img/collage-galeria.jpg" alt="Galeria d'obra" class="h-64 w-full object-cover opacity-90 group-hover:opacity-100 transition"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/70 via-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="text-5xl font-display font-bold text-white drop-shadow-lg">
+        Galeria d’obra
+      </h3>
+
+          <p class="text-neutral-100 text-lg font-medium drop-shadow">Pintura · Dibuix · Sèries</p>
+        </div>
+      </a>
+
+      <!-- Targeta Galeria NFT -->
+      <a href="#nft" class="group relative rounded-3xl overflow-hidden ring-1 ring-neutral-800 hover:ring-neutral-600 transition block">
+        <img src="assets/img/portada-nft.avif" alt="Galeria NFT (enllaços)" class="h-64 w-full object-cover opacity-90 group-hover:opacity-100 transition"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/70 via-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="text-5xl font-display font-bold text-white drop-shadow-lg">
+          Art digital / Galeria NFT
+        </h3>
+
+          <p class="text-neutral-100 text-lg font-medium drop-shadow">Opensea col·lecció</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- [GALERIA D'OBRA] Llistat per sèries -->
+<section id="galeria-obra" class="py-16 md:py-24 border-t border-neutral-800">
+  <div class="mx-auto max-w-6xl px-4">
+    <header class="flex items-end justify-between gap-6">
+      <div>
+        <h2 class="font-display text-3xl md:text-4xl">Galeria d’obra</h2>
+        <p class="text-neutral-400">Llistat per tècniques pictòriques i sèries. (Més endavant afegirem filtres.)</p>
+      </div>
+      <nav class="hidden md:flex gap-2" aria-label="Ancoratges de la galeria">
+        <a href="#galeria-obra" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Totes</a>
+        <a href="#serie-dols" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Dols</a>
+        <a href="#serie-animals" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Animals</a>
+        <a href="#serie-grafit-oli-llinosa-sobre-paper" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Grafit i oli de llinosa sobre paper</a>
+        <a href="#serie-color-i" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Colors</a>
+        <a href="#serie-color-ii" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Colors</a>
+      </nav>
+    </header>
+
+        <!-- SÈRIE: Dols -->
+        <h3 id="serie-dols" class="mt-10 text-sm uppercase tracking-wide text-neutral-400">Dols</h3>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Obra 1 -->
+          <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+            <img src="assets/img/Dol-blau.png" alt="Dol blau — Oli sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+            <div class="p-4">
+              <h3 class="font-medium">Dol blau</h3>
+              <p class="text-sm text-neutral-400">Oli sobre fusta · 35×41 cm · Dols</p>
+              <p class="mt-2 text-sm">Preu: <span class="font-medium">3.000 €</span></p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+                <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Obra 2 -->
+          <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+            <img src="assets/img/dona-i-nen.png" alt="Dona i nen — Oli sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+            <div class="p-4">
+              <h3 class="font-medium">Dol groc</h3>
+              <p class="text-sm text-neutral-400">Oli sobre fusta · 35×41 cm · Dols</p>
+              <p class="mt-2 text-sm">Preu: <span class="font-medium">3.000 €</span></p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+                <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Obra 3 -->
+          <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+            <img src="assets/img/Dol-vermell.jpeg" alt="Dol vermell — Oli sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+            <div class="p-4">
+              <h3 class="font-medium">Dol vermell</h3>
+              <p class="text-sm text-neutral-400">Pastel sec sobre paper · 35×41 cm · Dols</p>
+              <p class="mt-2 text-sm">Preu: <span class="font-medium">3.500 €</span></p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+                <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+              </div>
+            </div>
+          </article>
+
+        </div> <!-- ✅ TANCAMENT de la graella de Dols -->
+
+        <!-- SÈRIE: Animals -->
+        <h3 id="serie-animals" class="mt-12 text-sm uppercase tracking-wide text-neutral-400">Animals</h3>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+            <img src="assets/img/marlenes-quadre.jpg" alt="Sense títol — Oli sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+            <div class="p-4">
+              <h3 class="font-medium">Marlene</h3>
+              <p class="text-sm text-neutral-400">Oli sobre paper · 35×41 cm · Animals</p>
+              <p class="mt-2 text-sm">Preu: <span class="font-medium">A consultar</span></p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">No disponible</span>
+                <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+              </div>
+            </div>
+          </article>
+          <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+            <img src="assets/img/parella-gates.png" alt="Nut i Marlene — Oli sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+            <div class="p-4">
+              <h3 class="font-medium">Nut i Marlene</h3>
+              <p class="text-sm text-neutral-400">Oli sobre paper · 35×41 cm · Animals</p>
+              <p class="mt-2 text-sm">Preu: <span class="font-medium">A consultar</span></p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">No disponible</span>
+                <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+              </div>
+            </div>
+          </article>
+          <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+            <img src="assets/img/nut-groc.png" alt="Nut — Oli sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+            <div class="p-4">
+              <h3 class="font-medium">Nut</h3>
+              <p class="text-sm text-neutral-400">Oli sobre paper · 35×41 cm · Animals</p>
+              <p class="mt-2 text-sm">Preu: <span class="font-medium">A consultar</span></p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">N0 disponible</span>
+                <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- SÈRIE: Grafit i oli de llinosa sobre paper -->
+        <h3 id="serie-grafit-oli-llinosa-sobre-paper" class="mt-12 text-sm uppercase tracking-wide text-neutral-400">Grafit i oli de llinosa sobre paper</h3>
+        <p class="mt-2 text-neutral-400 text-sm italic">
+  Sèrie de figures realitzades amb grafit i oli de llinosa sobre paper. El treball explora la gestualitat i la presència corporal a través del diàleg entre línia i matèria.
+</p>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Obra 1 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona1.jpg" alt="Dona 1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona 1</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · 35×41 cm</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+<!-- Obra 2 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home nu 1.jpg" alt="Home nu 1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home nu 1</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · Mida aproximada A4–A3</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">600 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">No disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+<!-- Obra 3 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona asseguda_1.jpg" alt="Dona asseguda 1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona asseguda 1</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · Mida aproximada A4–A3</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">450</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">No disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<!-- Obra 4 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona asseguda 2.jpg" alt="Dona asseguda 2 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona asseguda 2</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · Mida aproximada A4–A3</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<!-- Obra 5 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona estirada 1.jpg" alt="Dona estirada 1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada 1</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · Mida aproximada A4–A3</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">600</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">No disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<!-- Obra 6 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona estirada 1tif_1.jpg" alt="Dona estirada 1tif_1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada 1tif_1</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · Mida aproximada A4–A3</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<!-- Obra 7 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona adormida.jpg" alt="Dona adormida — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona adormida</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · Mida aproximada A4–A3</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+<!-- Obra: Dona grassa 2 -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona grassa 2.jpg" 
+       alt="Dona grassa 2 — Grafit i oli de llinosa sobre paper" 
+       class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona grassa 2</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+<!-- Obres noves: Grafit i oli de llinosa sobre paper -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona estirada 2.jpg" alt="Dona estirada 2 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada 2</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona estirada 3.jpg" alt="Dona estirada 3 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada 3</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona estirada esquenes.jpg" alt="Dona estirada esquenes — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada esquenes</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/dona estirada.jpg" alt="Dona estirada — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona grassa 1.jpg" alt="Dona grassa 1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Coberta llibre "L'arquitectura del blat"</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">1.000 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona grassa 3.jpg" alt="Dona grassa 3 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona grassa 3</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona grassa de cara.jpg" alt="Dona grassa de cara — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona grassa de cara</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona grassa estirada.jpg" alt="Dona grassa estirada — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona grassa estirada</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona grassa recolzada en braç.jpg" alt="Dona grassa recolzada en braç — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona grassa recolzada en braç</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/dona maja.jpg" alt="Dona maja — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona maja</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+<!-- Noves obres: Grafit i oli de llinosa sobre paper -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona o home.jpg" alt="Dona o home — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona o home</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona recolzada braç.jpg" alt="Dona recolzada braç — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona recolzada braç</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/dona recolzada d'esquenes_1.jpg" alt="Dona recolzada d'esquenes — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona recolzada d'esquenes</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona semiasseguda d'esquenes_1.jpg" alt="Dona semiasseguda d'esquenes — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona semiasseguda d'esquenes</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dona sense cara.jpg" alt="Dona sense cara — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona sense cara</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/dos homes.jpg" alt="Dos homes — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dos homes</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Dos homes3.jpg" alt="Dos homes 3 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dos homes 3</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home assegut mirant a terra.jpg" alt="Home assegut mirant a terra — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home assegut mirant a terra</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home assegut.jpg" alt="Home assegut — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home assegut</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home com ballant.jpg" alt="Home com ballant — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home com ballant</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+<!-- Noves obres: Grafit i oli de llinosa sobre paper -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home dempeus d'esquena.jpg" alt="Home dempeus d'esquena — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home dempeus d'esquena</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home dempeus mirant esquerra 2.jpg" alt="Home dempeus mirant esquerra 2 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home dempeus mirant esquerra 2</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/home dempeus mirant esquerra.jpg" alt="Home dempeus mirant esquerra — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home dempeus mirant esquerra</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home d'esquenes dempeus 2.jpg" alt="Home d'esquenes dempeus 2 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home d'esquenes dempeus 2</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home dret recolzat.jpg" alt="Home dret recolzat — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home dret recolzat</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home en extensió.jpg" alt="Home en extensió — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home en extensió</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/home estirat 3.jpg" alt="Home estirat 3 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home estirat 3</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<!-- NOVES OBRES -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home_amb_torsió.jpg" alt="Home amb torsió — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home amb torsió</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home_migassegut.jpg" alt="Home migassegut — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home migassegut</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home_recolzat_mà.jpg" alt="Home recolzat mà — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home recolzat mà</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/home_recolzat_mig_cos.jpg" alt="Home recolzat mig cos — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home recolzat mig cos</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/home_recolzat_mirant-esquerra.jpg" alt="Home recolzat mirant esquerra — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home recolzat mirant esquerra</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/Home_torsió_2.jpg" alt="Home torsió 2 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Home torsió 2</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <img src="assets/img/dona_estirada_a_terrossa.jpg" alt="Dona estirada a terrassa — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+  <div class="p-4">
+    <h3 class="font-medium">Dona estirada a terrassa</h3>
+    <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A4–A3 aprox.</p>
+    <p class="mt-2 text-sm">Preu: <span class="font-medium">150 €</span></p>
+    <div class="mt-3 flex items-center justify-between">
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+      <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+    </div>
+  </div>
+</article>
+
+
+        </div>
+
+        <!-- SÈRIE: Colors -->
+<h3 id="serie-color-i" class="mt-12 text-sm uppercase tracking-wide text-neutral-400">Colors</h3>
+<p class="mt-2 text-neutral-400 text-sm italic">
+  Treballs realitzats amb oli sobre tela o fusta, i també amb aquarel·la o témpera sobre paper. 
+  En aquesta sèrie, el color esdevé matèria expressiva i també espai d’investigació: llum, pell i presència s’entrellacen fins a revelar la intimitat del gest pictòric.
+</p>
+
+<div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- Dona i nena -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Dona i nena_1.jpg" alt="Dona i nena — Oli sobre tela" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Dona i nena</h3>
+      <p class="text-sm text-neutral-400">Oli sobre tela · 80×60 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">2.000 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Autoretrat -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Autoretrat 2023 aquarel·la.jpg" alt="Autoretrat — Aquarel·la i grafit sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Autoretrat</h3>
+      <p class="text-sm text-neutral-400">Aquarel·la i grafit sobre paper · 50×70 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">800 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Dones -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Dones.jpg" alt="Dones — Tècnica mixta sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Dones</h3>
+      <p class="text-sm text-neutral-400">Tècnica mixta sobre paper · 50×70 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">600 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Dos homes -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/dos homes témpera sobre paper.png" alt="Dos homes — Témpera sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Dos homes</h3>
+      <p class="text-sm text-neutral-400">Témpera sobre paper · 50×70 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">600 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Núria i Gemma d’esquenes -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Núria i gemma d'esquenes.jpg" alt="Núria i Gemma d’esquenes — Oli sobre tela" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Núria i Gemma d’esquenes</h3>
+      <p class="text-sm text-neutral-400">Oli sobre tela · 80×60 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">600 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- La lliçó de música -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/La lliçó de música. Roger Alié.jpg" alt="La lliçó de música — Oli sobre tela" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">La lliçó de música</h3>
+      <p class="text-sm text-neutral-400">Oli sobre tela · 70×50 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">1.000 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+
+        <!-- SÈRIE: Estudis -->
+<h3 id="serie-color-ii" class="mt-12 text-sm uppercase tracking-wide text-neutral-400">Estudis</h3>
+<p class="mt-2 text-neutral-400 text-sm italic">
+  Aquesta sèrie reuneix peces de caràcter més experimental, realitzades amb tècniques mixtes, oli, grafit o tinta sobre paper. 
+  L’artista treballa des de l’observació directa, amb una atenció al gest i a la tensió del cos que transcendeix l’exercici acadèmic per esdevenir una indagació sobre la vulnerabilitat, la identitat i el moviment.
+</p>
+
+<div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- Migrant 1 -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/migrant1.jpg" alt="Migrant 1 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Migrant 1</h3>
+      <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A3 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">300 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Migrant 2 -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Migrant2.jpg" alt="Migrant 2 — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Migrant 2</h3>
+      <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A3 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">300 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Parella trans -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Parella trans.jpg" alt="Parella trans — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Parella trans</h3>
+      <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · A3 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">1.000 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Home amb sabates -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Home amb sabates.jpg" alt="Home amb sabates — Oli sobre tela" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Home amb sabates</h3>
+      <p class="text-sm text-neutral-400">Oli sobre tela · 50×70 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">600 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Home bala -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <img src="assets/img/Home bala.jpg" alt="Home bala — Grafit i oli de llinosa sobre paper" class="w-full max-h-64 object-contain bg-neutral-950"/>
+    <div class="p-4">
+      <h3 class="font-medium">Home bala</h3>
+      <p class="text-sm text-neutral-400">Grafit i oli de llinosa sobre paper · 50×70 cm</p>
+      <p class="mt-2 text-sm">Preu: <span class="font-medium">300 €</span></p>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Disponible</span>
+        <a href="#contacte" class="text-sm underline underline-offset-4">Sol·licitar</a>
+      </div>
+    </div>
+  </article>
+
+    </section>
+
+    <!-- [NFT] Aparador d’enllaços -->
+<section id="nft" class="py-16 md:py-24 border-t border-neutral-800">
+  <div class="mx-auto max-w-6xl px-4">
+    <header>
+      <h2 class="font-display text-3xl md:text-4xl">Galeria de NFT</h2>
+      <h3 class="font-display text-xl text-neutral-200 mt-2">Digital Art</h3>
+      <p class="text-neutral-300 mt-4 max-w-prose">
+        El procés que uneix el procés creatiu manual d'una artista nascuda al segle passat, d'una banda, 
+        i l'art digital, basat en tecnologies emergents i economia de mercat, de l'altra, aporta innovació 
+        però també sentit a aquesta mena d'art, i una perspectiva diferenciada, al que generalment es mostra 
+        en el mercat de l'art digital a través dels NFT.
+      </p>
+    </header>
+
+ <!-- A LA CAPÇALERA DE LA SECCIÓ NFT, CANVIA mt-8 -> mt-12 -->
+<div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- Targeta NFT: Els somnis de la raó provoca monstres -->
+  <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+    <figure class="h-56 w-full bg-neutral-950">
+      <img src="assets/img/NFT-coleccio1.png"
+           alt="Col·lecció NFT: Els somnis de la raó provoca monstres"
+           class="h-full w-full object-contain" />
+    </figure>
+    <div class="p-4">
+      <h3 class="font-medium">Col·lecció «The Mourning Body»</h3>
+      <p class="text-sm text-neutral-400">Plataforma: OpenSea · Xarxa: Polygon</p>
+      <div class="mt-3 flex items-center justify-between">
+        <a href="0x3751de751e24a57cc92305731a32665d993404e8"
+           target="_blank" rel="noopener"
+           class="text-sm underline underline-offset-4">Obrir col·lecció</a>
+        <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Activa</span>
+      </div>
+    </div>
+  </article>
+<!-- Targeta NFT: My bald animal -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <figure class="h-56 w-full bg-neutral-950">
+    <img src="assets/img/coleccio 2.png"
+         alt="Col·lecció NFT: My bald animal"
+         class="h-full w-full object-contain" />
+  </figure>
+  <div class="p-4">
+    <h3 class="font-medium">Col·lecció «My bald animals»</h3>
+    <p class="text-sm text-neutral-400">Plataforma: OpenSea · Xarxa: Polygon</p>
+    <div class="mt-3 flex items-center justify-between">
+      <a href="https://opensea.io/assets/matic/0x00c5b10bac0b3bf4e0493e13fc2860622e30d298"
+         target="_blank" rel="noopener"
+         class="text-sm underline underline-offset-4">Obrir col·lecció</a>
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Activa</span>
+    </div>
+  </div>
+</article>
+<!-- Targeta NFT: Unlivable Lives: the Forgotten Bodies of War -->
+<article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800">
+  <figure class="h-56 w-full bg-neutral-950">
+    <img src="assets/img/colleccio 3.png"
+         alt="Col·lecció NFT: Unlivable Lives: the Forgotten Bodies of War"
+         class="h-full w-full object-contain" />
+  </figure>
+  <div class="p-4">
+    <h3 class="font-medium">Col·lecció «Unlivable Lives: the Forgotten Bodies of War»</h3>
+    <p class="text-sm text-neutral-400">Plataforma: OpenSea · Xarxa: Polygon</p>
+    <div class="mt-3 flex items-center justify-between">
+      <!-- Substitueix # per l'enllaç real de la col·lecció a OpenSea -->
+      <a href="#" target="_blank" rel="noopener"
+         class="text-sm underline underline-offset-4">Obrir col·lecció</a>
+      <span class="text-xs rounded-full border border-neutral-700 px-2 py-1">Activa</span>
+    </div>
+  </div>
+</article>
+
+</div>
+
+  </div>
+</section>
+
+    
+    <!-- [POESIA] Llibres -->
+<section id="poesia" class="py-16 md:py-24 border-t border-neutral-800">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="font-display text-3xl md:text-4xl">Llibres de poesia</h2>
+
+    <!-- Intro més gran -->
+    <blockquote class="mt-3 text-neutral-200 text-lg md:text-xl max-w-3xl">
+  <p>Si Fuster es presenta a Aquelles cordes del vent (1987) com un cos obert de pell, ferrat, violent, gairebé, Peres es defineix d'aquesta manera: «Així m'ofreno / soc una pell amb greix d'esperes». És pell, sí, però, pell i més, pell i temps, pell i absència. Ja ho diu ella al poema "La vida": «Cap cor suporta aquesta vida». som vulnerables.
+</p>
+  <footer class="text-neutral-400 mt-2">— Sebastià Portell, epíleg del llibre L'arquitectura del blat (2021)</footer>
+</blockquote>
+
+   
+    <!-- GRAELLA DE LLIBRES -->
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Llibre 1: Des de les rajoles -->
+      <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800 flex flex-col">
+        <figure class="bg-neutral-950">
+          <img src="assets/img/Desde-les-rajoles.png"
+               alt="Portada del llibre: Des de les rajoles"
+               class="h-64 w-full object-contain" />
+        </figure>
+        <div class="p-4 flex flex-col gap-2">
+          <h3 class="font-medium">Des de les rajoles</h3>
+          <p class="text-sm text-neutral-400">Barcelona · 2013</p>
+
+          <blockquote class="mt-2 text-sm text-neutral-200 leading-relaxed space-y-3">
+            <p>«Com si seguísim el camí que un mapa del tresor ens marquès, qui llaurem amb la nostra lectura aquests indrets transitarem els infinist estats d'ànim d'una poetessa que ens farà do del fruit del seu esclat expressaiu»</p>
+            <footer class="text-neutral-400">— Itziar González Virós, pròleg</footer>
+          </blockquote>
+
+          <blockquote class="mt-3 text-sm text-neutral-200 leading-relaxed space-y-3">
+            <p>«Aplaudeixo, doncs, aquesta poesia peresiana que no vol ser difícil, que pretén ser expressament incomprensible, com si aquesta fos la clau per ser considerada, o per poder ser autèntica o garantia d'oferir un text de qualitat»</p>
+            <footer class="text-neutral-400">— Mireia Vidal-Conte</footer>
+          </blockquote>
+        </div>
+      </article>
+
+      <!-- Llibre 2: L'arquitectura del blat -->
+      <article class="rounded-2xl overflow-hidden ring-1 ring-neutral-800 flex flex-col">
+        <figure class="bg-neutral-950">
+          <img src="assets/img/Arquitectura-del-blat.png"
+               alt="Portada del llibre: L'arquitectura del blat"
+               class="h-64 w-full object-contain" />
+        </figure>
+        <div class="p-4 flex flex-col gap-2">
+          <h3 class="font-medium">L'arquitectura del blat</h3>
+          <p class="text-sm text-neutral-400">Barcelona · 2021</p>
+
+          <blockquote class="mt-2 text-sm text-neutral-200 leading-relaxed space-y-3">
+            <p>«A <em>L'arquitectura del blat</em>, Gemma Peres gosa traspassar fronteres i ser la intrusa. Entra a casa d'altri i hi pasta el pa. Feny el poema amb veu pròpia, amb la força de la mà i de la veu, que tenen força precisament perquè s'assumeixen vulnerables»</p>
+            <footer class="text-neutral-400">— Sebastià Portell, epíleg</footer>
+          </blockquote>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- [BIOGRAFIA] -->
+<!-- [SOBRE MI] -->
+<section id="biografia" class="py-16 md:py-24 border-t border-neutral-800">
+  <div class="mx-auto max-w-5xl px-4">
+    <h2 class="font-display text-3xl md:text-4xl">Sobre mi</h2>
+
+    <div class="mt-6 grid md:grid-cols-[1fr,2fr] gap-8 items-start">
+      <!-- Retrat (no canviem res per preservar mida) -->
+      <figure class="aspect-[3/4] rounded-2xl overflow-hidden ring-1 ring-neutral-800 bg-neutral-950">
+        <img src="assets/img/retrat-gemma.jpg"
+             alt="Retrat de Gemma Peres"
+             class="w-full h-full object-contain" />
+      </figure>
+
+      <!-- Textos -->
+      <div class="max-w-none">
+        <!-- Bio curta destacada (sense cursiva) -->
+        <div class="bg-neutral-800 rounded-xl p-4 mb-6">
+          <p class="text-lg font-medium text-neutral-100">
+            Com a artista plàstica indaga i explora la fragilitat des de la fragilitat en tota mena de cossos que haurien de ser acollits des de la precarietat.
+          </p>
+          <p class="text-lg font-medium text-neutral-100 mt-3">
+            Com a poeta juga amb una habilitat fascinant en posar gramàtica i idees al límit. Funambulista, existencialista, analítica de les relacions-emocions humanes. Les fa críptiques, místiques, (des)conceptuals i filosòfiques.
+          </p>
+        </div>
+
+        <!-- Bio clàssica (més petita) -->
+        <div>
+          <p class="text-sm text-neutral-300">
+            <strong>Gemma Peres i Romero</strong> (Barcelona, 1969), és llicenciada en filosofia i en filologia clàssica. Des de l’any 2000, treballa en el sector editorial i, des del 2007, també en l’àmbit de la comunicació i les publicacions a l’administració pública.
+          </p>
+          <p class="text-sm text-neutral-300 mt-3">
+            El 2013 publica el poemari <em>Des de les rajoles</em>. El 2021, <em>L'arquitectura del blat</em>. Forma part de la seva trajectòria el camí com a artista plàstica. Indaga i explora la fragilitat des de la fragilitat en tota mena de cossos.
+          </p>
+
+          <!-- Botó CV (gris clar, no blau) -->
+          <div class="mt-4">
+            <a href="assets/docs/CV_GemmaPeres.pdf" target="_blank"
+               class="inline-block rounded-lg bg-neutral-200 px-4 py-2 text-neutral-900 font-semibold hover:bg-neutral-300 transition">
+              Per saber-ne més de Gemma Peres (CV complet en PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exposicions -->
+    <div class="mt-10">
+      <h3 class="font-display text-2xl">Exposicions</h3>
+      <ul class="mt-4 space-y-2 text-neutral-300 text-sm list-disc list-inside">
+        <li>Altres mons. Exposició col·lectiva. Galeria DarteArte. Poblenou. Barcelona. Abril de 2025.</li>
+        <li>Anima’ls. Exposició col·lectiva. Galeria DarteArte. Poblenou. Barcelona. Juny de 2024.</li>
+        <li>"Consciencia". Exposició col·lectiva. Galeria DarteArte. Poblenou. Barcelona. Novembre de 2023.</li>
+        <li>"Col·lectiva. Dones". Espai Nòmada Mercantic. Sant Cugat del Vallès. Setembre de 2023.</li>
+        <li>Rostres. Exposició col·lectiva. Galeria DarteArte. Poblenou. Barcelona. Setembre de 2022.</li>
+        <li>Pell i Aires. Exposició col·lectiva. Galeria DarteArte. Poblenou. Barcelona. Abril de 2022.</li>
+        <li>La mirada eròtica. Exposició col·lectiva. Galeria DarteArte. Poblenou. Barcelona. Març de 2022.</li>
+        <li>El paisatge ferit. Exposició col·lectiva en motiu del 80è aniversari de la batalla de l’Ebre. Corbera d’Ebre. Agost 2018.</li>
+        <li>Gargots de nuesa. DaVinci, Barcelona, juny de 2014.</li>
+        <li>Nueses de Llinosa. La Granja Badalona, 2015.</li>
+        <li>Esbossant cossos. Barcelona, 2016.</li>
+        <li>Dibuixant als 4 Gats. Els 4 Gats, Barcelona, febrer de 2014.</li>
+        <li>Erotisme. Exposició col·lectiva. DaVinci, Barcelona, maig de 2012.</li>
+      </ul>
+    </div>
+
+    <!-- Publicacions -->
+    <div class="mt-10">
+      <h3 class="font-display text-2xl">Publicacions</h3>
+      <ul class="mt-4 space-y-2 text-neutral-300 text-sm list-disc list-inside">
+        <li><em>Flamarades sortiran</em>. Antologia de poesia catalana feminista, Godall edicions, 2023.</li>
+        <li><em>L'arquitectura del blat</em>. Barcelona, 2021.</li>
+        <li><em>Des de les rajoles</em>. Curbet Edicions, Girona, 2013.</li>
+        <li><em>Reduccions</em>. Revista de poesia, núm. 104. Vic, 2014.</li>
+        <li><em>Poetari</em>. Revista de poesia. Girona, 2013.</li>
+        <li><em>Afortunats</em>. Llibret. València, 2017.</li>
+        <li><em>Poetes joves actuals</em>. Editorial Amarantos. Barcelona, 1990.</li>
+        <li><em>Guia Leonardo</em>, 2018.</li>
+      </ul>
+    </div>
+
+    <!-- Mencions i premis -->
+    <div class="mt-10">
+      <h3 class="font-display text-2xl">Mencions i premis</h3>
+      <ul class="mt-4 space-y-2 text-neutral-300 text-sm list-disc list-inside">
+        <li>Finalista premi Gabriel Ferreter de poesia. Sant Cugat del Vallès, 2018.</li>
+        <li>Finalista premi Recull de poesia. Blanes, 2013.</li>
+        <li>Finalista premi Josep Maria Picó de poesia. Vallirana, 2012.</li>
+        <li>Finalista premi FNAC de poesia. Barcelona, 1997.</li>
+      </ul>
+    </div>
+
+    <!-- Projectes per a convocatòries -->
+    <div class="mt-10">
+      <h3 class="font-display text-2xl">Projectes per a convocatòries</h3>
+      <ul class="mt-4 space-y-2 text-neutral-300 text-sm list-disc list-inside">
+        <li>Beques de recerca i experimentació artística “La Escocesa”: <em>Dins del vagó: retrats il·limitats</em> (2017).</li>
+        <li>Premis Escriptura Montserrat Roig (2018 i 2020). Projecte: <em>Barcelona poesia. Acollir i viure la vulnerabilitat</em>.</li>
+        <li>ModPortrait 2017. Presentació d’obra.</li>
+        <li>Projecte exposició art contemporani. Biennal de Girona 2019-2020.</li>
+        <li>Projecte disseny logotip Dia Internacional de l’Art 2020. Bòlit, Centre d’art contemporani. Girona.</li>
+        <li>Projecte Residències 2020. Nau Còclea, Girona.</li>
+      </ul>
+    </div>
+
+   <!-- Contacte -->
+<div class="mt-12">
+  <h3 class="font-display text-2xl md:text-3xl mt-10">Contacte</h3>
+  <p class="mt-2 text-neutral-300">Per a adquisicions, encàrrecs o col·laboracions, escriu-me:</p>
+
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-6 grid gap-4">
+    <input type="hidden" name="form-name" value="contact" />
+    <p class="hidden"><label>No emplenis això: <input name="bot-field" /></label></p>
+
+    <label class="grid gap-2">
+      <span class="text-sm">Nom</span>
+      <input required type="text" name="name" class="bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3" />
+    </label>
+
+    <label class="grid gap-2">
+      <span class="text-sm">Correu electrònic</span>
+      <input required type="email" name="email" class="bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3" />
+    </label>
+
+    <label class="grid gap-2">
+      <span class="text-sm">Missatge</span>
+      <textarea required name="message" rows="5" class="bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-3"></textarea>
+    </label>
+
+    <button type="submit" class="mt-2 inline-flex items-center justify-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
+      Enviar
+    </button>
+  </form>
+
+  <!-- Bloc de Blog i Xarxes -->
+  <div class="mt-6 text-sm text-neutral-400">
+    <p>Blog: 
+      <a href="https://gemmaperes.wordpress.com" target="_blank" class="underline underline-offset-4">
+        El meu blog
+      </a>
+    </p>
+    <p class="mt-1">Xarxes: 
+      <a href="#" class="underline underline-offset-4">Instagram</a> · 
+      <a href="#" class="underline underline-offset-4">Twitter</a> · 
+      <a href="#" class="underline underline-offset-4">LinkedIn</a>
+    </p>
+  </div>
+</div>
+
+</section>
+
+    
+  </main>
+
+  <footer class="border-t border-neutral-800">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="y"></span> Gemma Peres · Tots els drets reservats</p>
+      <nav aria-label="Peu de pàgina" class="flex gap-6">
+        <a class="hover:underline underline-offset-4" href="#">Avís legal</a>
+        <a class="hover:underline underline-offset-4" href="#">Privacitat</a>
+        <a class="hover:underline underline-offset-4" href="#">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
