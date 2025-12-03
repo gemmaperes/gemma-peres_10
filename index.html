@@ -16,42 +16,83 @@
     .font-display{font-family: "Cormorant Garamond", Georgia, serif}
     :focus-visible{outline: 2px solid white; outline-offset: 4px}
   </style>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0WLF980HC5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('js', new Date());
+  gtag('config', 'G-0WLF980HC5');
+</script>
+
 </head>
 <body class="font-ui bg-neutral-900 text-neutral-100">
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-neutral-800 focus:px-3 focus:py-2 focus:rounded-xl">Saltar al contingut</a>
 
-  <!-- [HEADER / NAV] -->
-  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/70 bg-neutral-900/90 border-b border-neutral-800">
-    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-      <a href="#inici" class="font-display text-2xl tracking-wide">Gemma Peres · Art i Poesia</a>
-      <nav aria-label="Navegació principal">
-        <ul class="hidden md:flex gap-6 text-sm">
-          <li><a class="hover:underline underline-offset-4" href="#galeria">Galeria</a></li>
-          <li><a class="hover:underline underline-offset-4" href="#poesia">Llibres de poesia</a></li>
-          <li><a class="hover:underline underline-offset-4" href="#biografia">Sobre mi</a></li>
-          <li><a class="hover:underline underline-offset-4" href="#contacte">Contacte</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- [HEADER / NAV] -->
+<header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/70 bg-neutral-900/90 border-b border-neutral-800">
+  <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+    <a href="#inici" class="font-display text-2xl tracking-wide">
+      Gemma Peres · Art i Poesia
+    </a>
+
+    <nav aria-label="Navegació principal">
+      <ul class="hidden md:flex gap-6 text-sm">
+        <li><a class="hover:underline underline-offset-4" href="#galeria">Galeria</a></li>
+        <li><a class="hover:underline underline-offset-4" href="#poesia">Llibres de poesia</a></li>
+        <li><a class="hover:underline underline-offset-4" href="#biografia">Sobre mi</a></li>
+        <li><a class="hover:underline underline-offset-4" href="#contacte">Contacte</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main id="main">
-    <!-- [HERO / INICI] -->
-    <section id="inici" class="bg-gradient-to-b from-neutral-900 to-neutral-950">
-      <div class="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="font-display text-4xl md:text-5xl leading-tight">Gemma Peres · Art i Poesia</h1>
-          <p class="mt-5 text-neutral-300 max-w-prose">Web d’artista amb obra pictòrica i treball per tècniques pictòriques i sèries. Aquí també hi trobaràs els meus llibres de poesia i, a banda, un aparador amb enllaços a les meves col·leccions NFT d'art digital.</p>
-          <div class="mt-8 flex gap-3">
-            <a href="#galeria" class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">Entrar a la galeria</a>
-            <a href="#poesia" class="inline-flex items-center rounded-2xl px-5 py-3 border border-neutral-700 hover:border-neutral-500">Llibres de poesia</a>
-          </div>
-        </div>
-        <figure class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl ring-1 ring-neutral-800">
-          <img src="assets/img/premi art emergent.jpg" alt="Taller de Gemma Peres — obra en procés" class="w-full h-full object-cover" />
-        </figure>
+ <!-- [HERO / INICI] -->
+<section id="inici" class="bg-gradient-to-b from-neutral-900 to-neutral-950">
+  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="font-display text-4xl md:text-5xl leading-tight">Gemma Peres · Art i Poesia</h1>
+
+      <p class="mt-5 text-neutral-300 max-w-prose">
+        Web d’artista amb obra pictòrica i treball per tècniques pictòriques i sèries. Aquí també hi trobaràs
+        els meus llibres de poesia i, a banda, un aparador amb enllaços a les meves col·leccions NFT d'art digital.
+      </p>
+
+      <!-- Botons principals -->
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#galeria"
+           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
+          Entrar a la galeria
+        </a>
+
+        <a href="#poesia"
+           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
+          Llibres de poesia
+        </a>
+
+        <a href="#biografia"
+           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
+          Sobre mi
+        </a>
+
+        <a href="#contacte"
+           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
+          Comandes
+        </a>
       </div>
-    </section>
+    </div>
+
+    <figure class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl ring-1 ring-neutral-800">
+      <img src="assets/img/premi art emergent.jpg"
+           alt="Taller de Gemma Peres — obra en procés"
+           class="w-full h-full object-cover" />
+    </figure>
+  </div>
+</section>
+
 
     <!-- [GALERIA] Portada amb dues opcions -->
 <section id="galeria" class="py-16 md:py-24 border-t border-neutral-800">
@@ -1184,7 +1225,9 @@
     </div>
 
    <!-- Contacte -->
-<div class="mt-12">
+<!-- Contacte -->
+<div id="contacte" class="mt-12">
+
   <h3 class="font-display text-2xl md:text-3xl mt-10">Contacte</h3>
   <p class="mt-2 text-neutral-300">Per a adquisicions, encàrrecs o col·laboracions, escriu-me:</p>
 
