@@ -33,11 +33,15 @@
 <!-- [HEADER / NAV] -->
 <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/70 bg-neutral-900/90 border-b border-neutral-800">
   <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-    <a href="#inici" class="font-display text-2xl tracking-wide">
+
+    <!-- NOM MÉS GRAN EN DESKTOP, NORMAL EN MÒBIL -->
+   <a href="#inici" class="font-display tracking-wide text-3xl md:text-5xl leading-none">
+
       Gemma Peres · Art i Poesia
     </a>
 
     <nav aria-label="Navegació principal">
+      <!-- EL MENÚ CONTINUA IGUAL -->
       <ul class="hidden md:flex gap-6 text-sm">
         <li><a class="hover:underline underline-offset-4" href="#galeria">Galeria</a></li>
         <li><a class="hover:underline underline-offset-4" href="#poesia">Llibres de poesia</a></li>
@@ -45,53 +49,108 @@
         <li><a class="hover:underline underline-offset-4" href="#contacte">Contacte</a></li>
       </ul>
     </nav>
+
   </div>
 </header>
+
 
 
   <main id="main">
  <!-- [HERO / INICI] -->
 <section id="inici" class="bg-gradient-to-b from-neutral-900 to-neutral-950">
-  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h1 class="font-display text-4xl md:text-5xl leading-tight">Gemma Peres · Art i Poesia</h1>
 
-      <p class="mt-5 text-neutral-300 max-w-prose">
-        Web d’artista amb obra pictòrica i treball per tècniques pictòriques i sèries. Aquí també hi trobaràs
-        els meus llibres de poesia i, a banda, un aparador amb enllaços a les meves col·leccions NFT d'art digital.
-      </p>
+  <!-- SLIDER -->
+<div class="relative w-full h-[52vh] md:h-[65vh] overflow-hidden rounded-b-3xl shadow-xl">
 
-      <!-- Botons principals -->
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#galeria"
-           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
-          Entrar a la galeria
-        </a>
+  <!-- CONTENIDOR DE SLIDES -->
+  <div id="carousel" class="flex w-full h-full transition-transform duration-700 ease-out">
 
-        <a href="#poesia"
-           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
-          Llibres de poesia
-        </a>
+    <!-- SLIDE 1 -->
+    <div class="w-full h-full relative flex-shrink-0">
+      <img src="assets/img/premi art emergent.jpg"
+           class="w-full h-full object-cover object-[50%_40%]"
+           alt="Premi Art Emergent 2025">
 
-        <a href="#biografia"
-           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
-          Sobre mi
-        </a>
 
-        <a href="#contacte"
-           class="inline-flex items-center rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">
-          Comandes
-        </a>
+      
+      <!-- TEXT SOBREPOSAT -->
+      <div class="absolute bottom-10 left-10 
+                  bg-neutral-900/60 backdrop-blur-md 
+                  px-6 py-4 rounded-xl max-w-lg shadow-lg">
+        <h2 class="text-xl md:text-2xl font-display text-white">
+          Premi Art Emergent 2025 — Barcelona
+        </h2>
+        <p class="text-neutral-300 text-sm md:text-base">
+          Obra reconeguda pel jurat · Espai Espinosa
+        </p>
       </div>
     </div>
 
-    <figure class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl ring-1 ring-neutral-800">
-      <img src="assets/img/premi art emergent.jpg"
-           alt="Taller de Gemma Peres — obra en procés"
-           class="w-full h-full object-cover" />
-    </figure>
+    <!-- Quan tinguis més notícies, duplica aquest div:
+    <div class="w-full h-full relative flex-shrink-0">
+      ...
+    </div> -->
+
+      -->
+
+    </div>
+
+    <!-- BOTONS (DISCRETS, MODE ELEGANT) -->
+    <button id="prev"
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-neutral-900/40 hover:bg-neutral-900/70 text-white px-3 py-2 rounded-full backdrop-blur">
+      ‹
+    </button>
+
+    <button id="next"
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-neutral-900/40 hover:bg-neutral-900/70 text-white px-3 py-2 rounded-full backdrop-blur">
+      ›
+    </button>
+
+  </div>
+
+  <!-- TEXT I BOTONS ORIGINALS, SENSE L’IMATGE D’ABANS -->
+  <div class="mx-auto max-w-6xl px-4 pb-16 md:pb-24 mt-10">
+   <h1 class="font-display text-3xl md:text-2xl leading-tight">
+
+      Gemma Peres · Art i Poesia
+    </h1>
+
+    <p class="mt-5 text-neutral-300 max-w-prose">
+      Web d’artista amb obra pictòrica i treball per tècniques pictòriques i sèries.
+      Aquí també hi trobaràs els meus llibres de poesia i un aparador amb col·leccions NFT d'art digital.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#galeria" class="rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">Entrar a la galeria</a>
+      <a href="#poesia" class="rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">Llibres de poesia</a>
+      <a href="#biografia" class="rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">Sobre mi</a>
+      <a href="#contacte" class="rounded-2xl px-5 py-3 bg-neutral-100 text-neutral-900 font-medium hover:bg-white transition">Comandes</a>
+    </div>
   </div>
 </section>
+
+<!-- JS DEL CARRUSEL -->
+<script>
+const carousel = document.getElementById("carousel");
+const slides = carousel.children.length;
+let index = 0;
+
+document.getElementById("next").onclick = () => {
+  index = (index + 1) % slides;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+};
+
+document.getElementById("prev").onclick = () => {
+  index = (index - 1 + slides) % slides;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+};
+
+// Auto-play
+setInterval(() => {
+  index = (index + 1) % slides;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}, 6000);
+</script>
 
 
     <!-- [GALERIA] Portada amb dues opcions -->
@@ -145,7 +204,7 @@
         <a href="#serie-animals" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Animals</a>
         <a href="#serie-grafit-oli-llinosa-sobre-paper" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Grafit i oli de llinosa sobre paper</a>
         <a href="#serie-color-i" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Colors</a>
-        <a href="#serie-color-ii" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Colors</a>
+        <a href="#serie-color-ii" class="rounded-xl px-3 py-2 border border-neutral-700 hover:border-neutral-500">Estudis</a>
       </nav>
     </header>
 
